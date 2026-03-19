@@ -1,0 +1,242 @@
+.admin {
+    padding: 40px;
+    margin-bottom: 200px;
+}
+
+.adminTitle h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.allProducts h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.adminForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.adminForm input {
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    outline: none;
+    width: 500px;
+}
+
+.adminForm button {
+    padding: 10px 20px;
+    background-color: hsl(240, 100%, 50%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.allProductsData {
+    display: flex;
+    gap: 10px;
+
+}
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.productItem img {
+    height: 100px;
+    width: fit-content;
+}
+
+.productPrice {
+    display: flex;
+    gap: 5px;
+}
+
+.productPrice .discountPrice {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.productPrice .originalPrice {
+    font-size: 10px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.productPrice .discountText {
+    font-size: 10px;
+    color: hsl(157, 100%, 35%);
+}
+
+.productItem h4 {
+    font-size: 10px;
+    color: hsl(0, 0%, 30%);
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.productItem h4:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+.productBtns {
+    display: flex;
+    gap: 10px;
+}
+
+.productBtns .edit {
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.productBtns .delete {
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/* Container */
+.toggle-group {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+/* Label (wraps switch + text) */
+.toggle-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Hide default checkbox */
+.toggle-group input[type="checkbox"] {
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    padding: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Circle inside toggle */
+.toggle-group input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+/* When checked */
+.toggle-group input[type="checkbox"]:checked {
+    background: #4caf50;
+    /* green */
+}
+
+/* Move circle when ON */
+.toggle-group input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+/* Hover effect */
+.toggle-group input[type="checkbox"]:hover {
+    background: #bbb;
+}
+
+/* Active (clicked) */
+.toggle-group input[type="checkbox"]:active::before {
+    width: 18px;
+}
+
+
+/* Wrapper */
+.select-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Select */
+.custom-select {
+    width: 100%;
+    padding: 12px 30px 12px 12px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Focus */
+.custom-select:focus {
+    border-color: black;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Disabled option (placeholder look) */
+.custom-select option[value=""] {
+    color: #999;
+}
+
+
+
+
+
+/* -------------productType------------ */
+.productType {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* ---------------tags--------- */
+.tags {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2px;
+    font-size: 8px;
+}
+
+.tags .btn {
+    border: 1px solid gray;
+    padding: 0.1px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+}

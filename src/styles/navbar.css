@@ -1,0 +1,137 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.navbar-links ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  list-style: none;
+  width: 650px;
+}
+
+.navbar-links ul li {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.navbar-links ul li:hover {
+  color: hsl(0, 0%, 50%);
+}
+
+.navbar-search input {
+  border: 1px solid lavender;
+  border-color: rgba(143, 84, 240);
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 20px;
+  box-shadow: 2px 2px 0 0 rgba(132, 18, 245, 0.4);
+  outline: none;
+}
+
+.navbar-btns img {
+  height: 25px;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+/* ========== Responsive Styles ========== */
+@media(max-width:1024px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    height: 150px;
+    width: 200px;
+    /* fixed or responsive width */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    /* just below navbar */
+    left: 0.01rem;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    /* ensure it overlaps correctly */
+  }
+
+  .navbar-search {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    height: 150px;
+    width: 200px;
+    /* fixed or responsive width */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    /* just below navbar */
+    left: 0.01rem;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    /* ensure it overlaps correctly */
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-search {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 10px;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar-logo {
+    padding-right: 90px;
+  }
+
+  .navbar-btns {
+    gap: 10px;
+  }
+
+  .navbar-btns img {
+    height: 20px;
+  }
+}

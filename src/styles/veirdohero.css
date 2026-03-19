@@ -1,0 +1,30 @@
+.veirdo-hero {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+.hero-banner-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Optional: You can add some height control for very small devices */
+@media (max-width: 768px) {
+  .hero-banner-img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  .mySwiper {
+    --swiper-navigation-size: 15px;
+  }
+  .swiper-button-prev::after {
+    font-size: var(--swiper-navigation-size);
+  }
+}
+@media (max-width: 450px) {
+  .veirdo-hero {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,179 @@
+.veirdo-footer {
+  background-color: #00aa68;
+  padding: 40px;
+}
+
+.veirdo-footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.veirdo-footer-title h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  letter-spacing: -3px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.veirdo-footer-search {
+  display: flex;
+  gap: 20px;
+}
+
+.veirdo-footer-search input {
+  padding: 25px;
+  width: 500px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow:2px 2px 0px hsl(240, 100%, 70%) ;
+}
+
+.veirdo-footer-search button {
+  padding: 10px;
+  background-color: #a740af;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.veirdo-footer-socials{
+  width: 100%;
+}
+
+.veirdo-footer-socials-title p {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.veirdo-footer-socials-links {
+  display: flex;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.veirdo-footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1px solid black;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.veirdo-footer-socials-link img {
+  height: 20px;
+}
+
+.veirdo-footer-socials-link:hover {
+  background-color: hsl(157, 100%, 45%);
+}
+
+.veirdo-footer-bottom-extras {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.veirdo-footer-bottom-extras .category h4 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.veirdo-footer-bottom-extras .category p {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.veirdo-footer-bottom-extras .company h4 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.veirdo-footer-bottom-extras .company p {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.veirdo-footer-bottom-extras .customers h4 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.veirdo-footer-bottom-extras .customers p {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.veirdo-footer-animate {
+  font-size: 150px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: hsl(50, 100%, 61%);
+  letter-spacing: -10px;
+  overflow: hidden;
+}
+
+.veirdo-footer-animate span {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: scroll-left 8s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.veirdo-footer-copyright {
+  font-size: 12px;
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 768px) {
+  .veirdo-footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .veirdo-footer-bottom-extras {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .veirdo-footer-search {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .veirdo-footer-socials-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
